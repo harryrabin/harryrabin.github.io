@@ -1,0 +1,19 @@
+/*
+font-family: 'Ubuntu', sans-serif;
+300, 300i, 400, 400i, 500, 700
+ */
+
+body {
+  background-color: #D2D6EF;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar-brand {
+  font-weight: 500;
+  font-size: 2rem;
+  color: #4B5358;
+}
+
+.navbar-brand:hover {
+  color: #AF929D;
+}
