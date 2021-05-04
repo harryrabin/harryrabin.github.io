@@ -1,0 +1,45 @@
+/*
+font-family: 'Ubuntu', sans-serif;
+300, 300i, 400, 400i, 500, 700
+ */
+:root {
+  --bg-color: #424B54;
+  --heading-color: #C5BAAF;
+  --hover-color: #EBCFB2;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 62.5%;
+}
+@mixin flex-center {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+nav {
+  @include flex-center;
+  width: 80%;
+
+  a {
+    color: var(--heading-color);
+    font-size: 1.5rem;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--hover-color);
+    }
+  }
+
+  .nav-header {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  li {
+    display: inline;
+  }
+}
