@@ -1,6 +1,8 @@
 /*
 font-family: 'Ubuntu', sans-serif;
 300, 300i, 400, 400i, 500, 700
+
+font-family: 'Poppins';
  */
 $bg-color: #EBCFB2;
 $dark: #424b54;
@@ -21,6 +23,7 @@ nav.navbar {
   .navbar-brand {
     font-size: 3rem;
     font-weight: 700;
+    font-family: 'Poppins';
   }
 
   .nav-link {
@@ -30,7 +33,6 @@ nav.navbar {
 }
 
 section {
-  height: 1000px;
   padding: 20px 5%;
 
   &:nth-of-type(2n) {
@@ -47,5 +49,9 @@ section {
   p {
     font-size: 1.6rem;
     font-weight: 300;
+  }
+
+  .container-fluid {
+    padding: 0;
   }
 }
