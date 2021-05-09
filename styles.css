@@ -17,6 +17,17 @@ nav.navbar {
   padding: 20px 5%;
   align-items: flex-start;
 }
+@media (min-width: 768px) {
+  nav.navbar {
+    background-color: transparent !important;
+  }
+}
+@media (max-width: 769.98px) {
+  nav.navbar {
+    flex-direction: row !important;
+    align-items: center;
+  }
+}
 nav.navbar .navbar-brand {
   font-size: 3rem;
   font-weight: 700;
@@ -28,16 +39,15 @@ nav.navbar .nav-link {
 }
 
 section {
+  height: 1000px;
   padding: 20px 5%;
 }
 section:nth-of-type(2n) {
-  background-color: white;
+  background-color: #fff;
 }
 section h1 {
   font-weight: 400;
-  text-align: right;
   padding-top: 10px;
-  margin-bottom: 120px;
 }
 section p {
   font-size: 1.6rem;
@@ -45,6 +55,20 @@ section p {
 }
 section .container-fluid {
   padding: 0;
+}
+@media (min-width: 768px) {
+  section {
+    padding-left: 300px;
+  }
+  section h1 {
+    text-align: right;
+  }
+}
+
+@media (max-width: 769.98px) {
+  section {
+    padding-top: 100px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
