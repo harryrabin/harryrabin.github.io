@@ -7,6 +7,7 @@ font-family: 'Poppins';
 // $bg-color: #EBCFB2;
 $bg-color: #7dba84; // $heading-color: #424b54;
 $heading-color: rgba(50, 50, 50, 0.6);
+$mobile-header-push-height: 90px;
 
 :root {
   font-size: 62.5%;
@@ -82,11 +83,11 @@ section {
   }
   @media (max-width: 767.98px) {
     .page-anchor {
-      bottom: 100px;
+      bottom: $mobile-header-push-height;
     }
 
     &:first-of-type {
-      padding-top: 100px;
+      padding-top: $mobile-header-push-height;
     }
   }
 }

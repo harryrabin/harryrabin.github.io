@@ -74,10 +74,10 @@ section .container-fluid {
 }
 @media (max-width: 767.98px) {
   section .page-anchor {
-    bottom: 100px;
+    bottom: 90px;
   }
   section:first-of-type {
-    padding-top: 100px;
+    padding-top: 90px;
   }
 }
 

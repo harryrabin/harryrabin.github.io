@@ -10,12 +10,3 @@ for (link of navLinks) {
     navCollapse.hide()
   });
 }
-
-// function isBreakpoint(points) {
-//   for (p of points) {
-//     if ($('.device-' + p).is(':visible')) {
-//       return true;
-//     }
-//   }
-//   return false;
-// }
