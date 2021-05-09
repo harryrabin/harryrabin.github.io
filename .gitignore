@@ -1,5 +1,4 @@
-/colors.png
-/colors_new.png
-/old
+.DS_Store
+/colors
 /bootstrap-5.0.0/*
 !/bootstrap-5.0.0/dist

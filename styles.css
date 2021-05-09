@@ -9,7 +9,7 @@ font-family: 'Poppins';
 }
 
 body {
-  background-color: #EBCFB2;
+  background-color: #7dba84;
   font-family: "Ubuntu", sans-serif;
 }
 
@@ -17,29 +17,32 @@ nav.navbar {
   padding: 20px 5%;
   align-items: flex-start;
 }
-@media (min-width: 768px) {
-  nav.navbar {
-    background-color: transparent !important;
-  }
-}
-@media (max-width: 769.98px) {
-  nav.navbar {
-    flex-direction: row !important;
-    align-items: center;
-  }
-}
 nav.navbar .navbar-brand {
   font-size: 3rem;
   font-weight: 700;
   font-family: "Poppins";
 }
+nav.navbar .nav-item:not(:last-of-type) {
+  border-bottom: solid 1px rgba(50, 50, 50, 0.6);
+}
 nav.navbar .nav-link {
   font-size: 1.5rem;
   font-weight: 300;
 }
+@media (min-width: 768px) {
+  nav.navbar {
+    background-color: transparent !important;
+  }
+}
+@media (max-width: 767.98px) {
+  nav.navbar {
+    flex-direction: row !important;
+    align-items: center;
+  }
+}
 
 section {
-  height: 1000px;
+  min-height: 1000px;
   padding: 20px 5%;
 }
 section:nth-of-type(2n) {
@@ -48,10 +51,15 @@ section:nth-of-type(2n) {
 section h1 {
   font-weight: 400;
   padding-top: 10px;
+  color: rgba(50, 50, 50, 0.6);
 }
 section p {
   font-size: 1.6rem;
   font-weight: 300;
+}
+section .page-anchor {
+  position: relative;
+  visibility: hidden;
 }
 section .container-fluid {
   padding: 0;
@@ -64,9 +72,11 @@ section .container-fluid {
     text-align: right;
   }
 }
-
-@media (max-width: 769.98px) {
-  section {
+@media (max-width: 767.98px) {
+  section .page-anchor {
+    bottom: 100px;
+  }
+  section:first-of-type {
     padding-top: 100px;
   }
 }

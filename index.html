@@ -14,6 +14,11 @@
   <title>Harry Rabin</title>
 </head>
 
+<div class="device-xs visible-xs"></div>
+<div class="device-sm visible-sm"></div>
+<div class="device-md visible-md"></div>
+<div class="device-lg visible-lg"></div>
+
 <body data-bs-spy="scroll" data-bs-target="#navbar-main">
 
   <nav class="navbar fixed-top navbar-light navbar-expand-md bg-light flex-column" id="navbar-main">
@@ -23,15 +28,16 @@
     </button>
     <div class="collapse navbar-collapse" id="nav-collapse">
       <ul class="navbar-nav flex-column">
-        <li class="nav-item"><a class="nav-link ps-0" href="#about">Bio</a></li>
-        <li class="nav-item"><a class="nav-link ps-0" href="#code">Code</a></li>
-        <li class="nav-item"><a class="nav-link ps-0" href="#audio">Audio</a></li>
-        <li class="nav-item"><a class="nav-link ps-0" href="#art">3D</a></li>
+        <li class="nav-item ms-auto ms-md-0 me-md-auto"><a class="nav-link ps-0" href="#about">Bio</a></li>
+        <li class="nav-item ms-auto ms-md-0 me-md-auto"><a class="nav-link ps-0" href="#code">Code</a></li>
+        <li class="nav-item ms-auto ms-md-0 me-md-auto"><a class="nav-link ps-0" href="#audio">Audio</a></li>
+        <li class="nav-item ms-auto ms-md-0 me-md-auto"><a class="nav-link ps-0" href="#art">3D</a></li>
       </ul>
     </div>
   </nav>
 
-  <section id="about">
+  <section>
+    <div class="page-anchor" id="about"></div>
     <h1>About Me</h1>
     <div class="container-fluid">
       <div class="row">
@@ -43,7 +49,8 @@
     </div>
   </section>
 
-  <section id="code">
+  <section>
+    <div class="page-anchor" id="code"></div>
     <h1>Coding Projects</h1>
     <div class="container-fluid">
       <div class="row">
@@ -55,18 +62,20 @@
     </div>
   </section>
 
-  <section id="audio">
+  <section>
+    <div class="page-anchor" id="audio"></div>
     <h1>Audio Engineering</h1>
   </section>
 
-  <section id="art">
+  <section>
+    <div class="page-anchor" id="art"></div>
     <h1>3D Art</h1>
-    <p></p>
   </section>
 
   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script> -->
-  <script type="text/javascript" src="bootstrap-5.0.0/dist/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="interact.js"></script>
+  <script src="bootstrap-5.0.0/dist/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <script src="interact.js"></script>
 
 </body>
 

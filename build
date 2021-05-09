@@ -1,1 +1,1 @@
-sass master.scss styles.css
+sass master.scss styles.css -w
