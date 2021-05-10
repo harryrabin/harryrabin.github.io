@@ -25,7 +25,6 @@ nav.navbar {
 
   .navbar-brand {
     font-size: 3rem;
-    font-weight: 700;
     font-family: 'Poppins';
   }
 
@@ -69,11 +68,22 @@ section {
 
   .row {
     align-items: center;
+    margin-bottom: 40px;
   }
 
   .content-image {
     width: 100%;
     border-radius: 100%;
+  }
+
+  .image-column {
+    text-align: center;
+
+    i {
+      display: block;
+      padding-top: 15px;
+      font-size: 1.2rem;
+    }
   }
 
   .page-anchor {
@@ -90,6 +100,10 @@ section {
 
     h1 {
       text-align: right;
+    }
+
+    .row:nth-of-type(2n) {
+      flex-direction: row-reverse;
     }
 
     .page-anchor {

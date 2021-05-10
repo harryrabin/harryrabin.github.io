@@ -19,7 +19,6 @@ nav.navbar {
 }
 nav.navbar .navbar-brand {
   font-size: 3rem;
-  font-weight: 700;
   font-family: "Poppins";
 }
 nav.navbar .nav-item:not(:last-of-type) {
@@ -60,10 +59,19 @@ section p {
 }
 section .row {
   align-items: center;
+  margin-bottom: 40px;
 }
 section .content-image {
   width: 100%;
   border-radius: 100%;
+}
+section .image-column {
+  text-align: center;
+}
+section .image-column i {
+  display: block;
+  padding-top: 15px;
+  font-size: 1.2rem;
 }
 section .page-anchor {
   position: relative;
@@ -78,6 +86,9 @@ section .container-fluid {
   }
   section h1 {
     text-align: right;
+  }
+  section .row:nth-of-type(2n) {
+    flex-direction: row-reverse;
   }
   section .page-anchor {
     bottom: 20px;
