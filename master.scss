@@ -4,8 +4,9 @@ font-family: 'Ubuntu', sans-serif;
 
 font-family: 'Poppins';
  */
-$bg-color: #7dba84; // $bg-color: #EBCFB2;
-$heading-color: rgba(50, 50, 50, 0.6); // $heading-color: #424b54;
+$bg-color: #7dba84;
+$secondary-color: #fff;
+$heading-color: rgba(50, 50, 50, 0.6);
 $mobile-header-push-height: 90px;
 $x-padding: 5%;
 $y-padding: 20px;
@@ -51,7 +52,7 @@ section {
   padding: $y-padding $x-padding;
 
   &:nth-of-type(2n) {
-    background-color: #fff;
+    background-color: $secondary-color;
   }
 
   h1 {
@@ -102,7 +103,7 @@ section {
       text-align: right;
     }
 
-    .row:nth-of-type(2n) {
+    .row:nth-child(2n) {
       flex-direction: row-reverse;
     }
 

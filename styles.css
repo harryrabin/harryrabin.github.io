@@ -87,7 +87,7 @@ section .container-fluid {
   section h1 {
     text-align: right;
   }
-  section .row:nth-of-type(2n) {
+  section .row:nth-child(2n) {
     flex-direction: row-reverse;
   }
   section .page-anchor {
