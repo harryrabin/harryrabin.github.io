@@ -51,11 +51,19 @@ section:nth-of-type(2n) {
 section h1 {
   font-weight: 400;
   padding-top: 10px;
+  margin-bottom: 20px;
   color: rgba(50, 50, 50, 0.6);
 }
 section p {
   font-size: 1.6rem;
   font-weight: 300;
+}
+section .row {
+  align-items: center;
+}
+section .content-image {
+  width: 100%;
+  border-radius: 100%;
 }
 section .page-anchor {
   position: relative;
@@ -71,13 +79,16 @@ section .container-fluid {
   section h1 {
     text-align: right;
   }
+  section .page-anchor {
+    bottom: 20px;
+  }
 }
 @media (max-width: 767.98px) {
-  section .page-anchor {
-    bottom: 90px;
-  }
   section:first-of-type {
     padding-top: 90px;
+  }
+  section .page-anchor {
+    bottom: 90px;
   }
 }
 

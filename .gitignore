@@ -1,4 +1,5 @@
 .DS_Store
+/content-draft
 /colors
 /bootstrap-5.0.0/*
 !/bootstrap-5.0.0/dist
