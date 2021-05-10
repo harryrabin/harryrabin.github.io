@@ -53,13 +53,13 @@ section h1 {
   margin-bottom: 20px;
   color: rgba(50, 50, 50, 0.6);
 }
-section p {
-  font-size: 1.6rem;
-  font-weight: 300;
-}
 section .row {
   align-items: center;
   margin-bottom: 40px;
+}
+section .row p {
+  font-size: 1.6rem;
+  font-weight: 300;
 }
 section .content-image {
   width: 100%;
@@ -87,10 +87,18 @@ section .container-fluid {
   section h1 {
     text-align: right;
   }
+  section .row p {
+    padding-left: 1.5rem;
+    padding-right: 0;
+  }
   section .row:nth-child(2n) {
     flex-direction: row-reverse;
   }
-  section .page-anchor {
+  section .row:nth-child(2n) p {
+    padding-left: 0;
+    padding-right: 1.5rem;
+  }
+  section .row .page-anchor {
     bottom: 20px;
   }
 }

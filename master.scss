@@ -39,10 +39,10 @@ nav.navbar {
   }
   // Media queries
   @media (min-width: 768px) {
-    background-color: transparent!important;
+    background-color: transparent !important;
   }
   @media (max-width: 767.98px) {
-    flex-direction: row!important;
+    flex-direction: row !important;
     align-items: center;
   }
 }
@@ -62,14 +62,14 @@ section {
     color: $heading-color;
   }
 
-  p {
-    font-size: 1.6rem;
-    font-weight: 300;
-  }
-
   .row {
     align-items: center;
     margin-bottom: 40px;
+
+    p {
+      font-size: 1.6rem;
+      font-weight: 300;
+    }
   }
 
   .content-image {
@@ -103,11 +103,23 @@ section {
       text-align: right;
     }
 
-    .row:nth-child(2n) {
-      flex-direction: row-reverse;
+    .row {
+      p {
+        padding-left: 1.5rem;
+        padding-right: 0;
+      }
+
+      &:nth-child(2n) {
+        flex-direction: row-reverse;
+
+        p {
+          padding-left: 0;
+          padding-right: 1.5rem;
+        }
+      }
     }
 
-    .page-anchor {
+    .row .page-anchor {
       bottom: $y-padding;
     }
   }
