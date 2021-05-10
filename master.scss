@@ -103,6 +103,10 @@ section {
       text-align: right;
     }
 
+    .page-anchor {
+      bottom: $y-padding;
+    }
+
     .row {
       p {
         padding-left: 1.5rem;
@@ -117,10 +121,6 @@ section {
           padding-right: 1.5rem;
         }
       }
-    }
-
-    .row .page-anchor {
-      bottom: $y-padding;
     }
   }
   @media (max-width: 767.98px) {
